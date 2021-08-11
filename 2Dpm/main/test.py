@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import startup
 import tensorflow as tf
-from run.predict_eval import test_one_step
+from main.predict_eval import test_one_step
 from util.app_config import config as app_config
 
 def test():
