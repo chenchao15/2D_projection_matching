@@ -1,0 +1,14 @@
+synth_set: "03001627"
+checkpoint_dir: /data1/cc/temp/
+inp_dir: data/tf_records_sample
+gt_pc_dir: data/gt/downsampled
+eval_split: val
+eval_unsupervised_shape: true
+vox_size: 128
+pc_gauss_kernel_size: 21
+pc_relative_sigma: 3.0
+pc_num_points: 16000
+pc_point_dropout: 0.07
+pred_topk: 1
+gt_topk: 1
+
