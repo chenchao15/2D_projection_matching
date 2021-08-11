@@ -50,7 +50,7 @@ def train():
     mkdir_if_missing(train_dir)
 
     tf.logging.set_verbosity(tf.logging.INFO)
-    split_name = f'test_816_random_5000_all_model'
+    split_name = f'/path/to/your tfrecords'
     dataset_file = os.path.join(cfg.inp_dir, f"{cfg.synth_set}_{split_name}.tfrecords")
 
     dataset = tf.data.TFRecordDataset(dataset_file, compression_type=tf_record_compression(cfg))
