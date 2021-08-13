@@ -1,4 +1,4 @@
-synth_set: "03001627"
+synth_set: "02691156"
 checkpoint_dir: ./
 inp_dir: data/tf_records
 gt_pc_dir: data/gt/downsampled
