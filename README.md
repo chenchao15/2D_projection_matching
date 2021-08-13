@@ -2,7 +2,7 @@
 
 Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching](https://arxiv.org/pdf/2108.03746.pdf), a paper on ICCV2021.
 
-![image-20210811203017087](C:\Users\陈超\AppData\Roaming\Typora\typora-user-images\image-20210811203017087.png)
+![overview](overview/overview.png)
 
 ## Requirements
 
