@@ -9,7 +9,7 @@ from util.data import tf_record_options
 
 
 def tf_records_dataset_filename(cfg):
-    filename = f'{cfg.synth_set}_test_816_random_5000_all_model' + '.tfrecords'
+    filename = f'{cfg.synth_set}_test' + '.tfrecords'
     return os.path.join(cfg.inp_dir, filename)
 
 
@@ -37,8 +37,6 @@ class Dataset3D:
 
         for k, string_record in enumerate(record_iterator):
             if num_samples != -1 and k == num_samples:
-                break
-            if k > 1:
                 break
             example = tf.train.Example()
             example.ParseFromString(string_record)

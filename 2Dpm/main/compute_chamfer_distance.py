@@ -63,7 +63,6 @@ def run_eval(dataset=None):
         sess.run(tf.global_variables_initializer())
         sess.run(tf.local_variables_initializer())
 
-    save_pred_name = "{}_{}".format(cfg.save_predictions_dir, cfg.eval_split)
     save_dir = os.path.join(exp_dir, cfg.save_predictions_dir)
     if dataset is None:
         dataset = Dataset3D(cfg)
