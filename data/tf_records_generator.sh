@@ -1,6 +1,6 @@
 #!/bin/sh
 
-python ../2Dpm/main/create_tf_records.py \
+python ../2Dpm/main/tf_records_generator.py \
 --split_dir=splits/ \
 --inp_dir_renders=renders \
 --out_dir=tf_records/ \

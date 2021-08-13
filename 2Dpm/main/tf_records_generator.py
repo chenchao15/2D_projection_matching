@@ -212,7 +212,9 @@ def get_inner_points_sas(mask):
         if k >= num:
             break
         px += scale
-
+    for i in range(k, num):
+        points[i][0] = points[i - k][0]
+        points[i][1] = points[i - k][1]
     return points
     
 
@@ -261,17 +263,17 @@ def create_record(synth_set, split_name, models):
             img = imread(im_file)
             rgb = img[:, :, 0:3]
             mask = img[:, :, [3]]
-            a,b,_ = mask.shape
-            erzhi_mask = binaryzation(mask)
+            a, b, _ = mask.shape
+            binary_mask = binaryzation(mask)
             mask = mask / 255.0
             if SAMPLE_TYPE == 1:
-                in_point = get_inner_points_pixel2random(erzhi_mask)
+                in_point = get_inner_points_pixel2random(binary_mask)
             elif SAMPLE_TYPE == 2:
-                in_point = get_inner_points_pixel2pixel(erzhi_mask)
+                in_point = get_inner_points_pixel2pixel(binary_mask)
             elif SAMPLE_TYPE == 3:
-                in_point = get_inner_points_sas(erzhi_mask)
+                in_point = get_inner_points_sas(binary_mask)
             else:
-                in_point = get_inner_points_random(erzhi_mask)
+                in_point = get_inner_points_random(binary_mask)
             if in_point is None:
                 error_flag = 1
                 break
