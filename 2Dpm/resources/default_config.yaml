@@ -3,9 +3,7 @@
 
 config: "" # .yaml config file
 
-test_step: 170000
-# radius: 10
-# scale: 0.5
+test_step: 0
 
 trainset_len: 1
 memory_size: 128
@@ -171,7 +169,7 @@ gauss_threshold: 1.0
 gauss_bias: 3.0 #3.0
 vis_size: 128
 
-sample_scale: 1000
+sample_scale: 8000
 
 ring_n: 5
 
