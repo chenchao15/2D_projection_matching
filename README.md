@@ -59,7 +59,7 @@ See the configurations in **2Dpm/resources/default_config.yaml** for more detial
 ## Test
 
 ```
-python 2Dpm/run/test.py --gpu=0 --synth_set=02691156 --checkpoint_dir=./ --test_step=100000
+python 2Dpm/main/test.py --gpu=0 --synth_set=02691156 --checkpoint_dir=./ --test_step=100000
 ```
 
 After the test, we save the quantification results in **checkpoint_dir/chamfer_distance.txt**. The generated 3D shapes are saved in **checkpoint_dir/$vox_size/pred**.
