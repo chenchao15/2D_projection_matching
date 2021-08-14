@@ -12,7 +12,7 @@ Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation
 
 ## Optimization process visualization
 
-
+<img src="overview/a.gif" alt="Webp.net-gifmaker" style="zoom:50%;" /><img src="overview/b.gif" alt="Webp.net-gifmaker (2)" style="zoom:50%;" />
 
 ## Requirements
 
@@ -90,3 +90,6 @@ If you find this project useful in your research, please consider citing:
   year={2021}
 }
 ```
+
+Our previous work published at ICML 2020 resolves the problem from another perspective, please see [here](https://github.com/chenchao15/drwr).
+
