@@ -6,9 +6,9 @@ Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation
 
 ## Single Image Reconstruction Results
 
-![result_1](overview\result_1.png)
+![result_1](overview/result_1.png)
 
-![result_2](overview\result_2.png)
+![result_2](overview/result_2.png)
 
 ## Optimization process visualization
 
