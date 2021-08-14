@@ -4,6 +4,16 @@ Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation
 
 ![overview](overview/overview.png)
 
+## Single Image Reconstruction Results
+
+![result_1](overview\result_1.png)
+
+![result_2](overview\result_2.png)
+
+## Optimization process visualization
+
+
+
 ## Requirements
 
 ### installation
@@ -31,7 +41,7 @@ We provide the same point clouds and rendered images of 3 classes(chair, plane a
 
 Firstly, put the `gt/` folder and the  `render/` folder into the `data/` folder.
 
-Secondly, Using the original rendered images to generate silhouettes and 2D sampling points, and save them into TFrecords format (taking the plane(category ID 02691156) as a example): 
+Secondly, Using the original rendered images to generate silhouettes and 2D sampling points, and save them into TFrecords format (taking the plane(category ID 02691156) as an example): 
 
 ```
 cd data
@@ -42,11 +52,11 @@ A few hours later, you will see the `tf_records/02691156_train.tf_records`.
 
 For convenience, we provide our generated TFrecords files of 3 classes(chair, plane and car) in the [link](https://drive.google.com/drive/folders/1Gn8OW38gGWhtGKbxtC04dXgh_lWu9qJL?usp=sharing), which contains `tf_records/`. you can just put the `tf_records/` folder into the `data/` folder.
 
-We also provide our pretrained model in the [link](https://drive.google.com/drive/folders/1Gn8OW38gGWhtGKbxtC04dXgh_lWu9qJL?usp=sharing). Put them into your **checkpoint_dir**.
+We also provide our pretrained model `pretrained_model/` and generated shapes `generated_shapes/` in the [link](https://drive.google.com/drive/folders/1Gn8OW38gGWhtGKbxtC04dXgh_lWu9qJL?usp=sharing). Put the `pretrained_model/` into your **checkpoint_dir**.
 
 ## Training
 
-To train our model execute the following, taking the plane(category ID 02691156) as a example:
+To train our model execute the following, taking the plane(category ID 02691156) as an example:
 
 ```
 python 2Dpm/main/train_eval.py --gpu=0 --synth_set=02691156 --checkpoint_dir=./
@@ -54,7 +64,7 @@ python 2Dpm/main/train_eval.py --gpu=0 --synth_set=02691156 --checkpoint_dir=./
 
 All trained models will be saved in checkpoint_dir.
 
-See the configurations in **2Dpm/resources/default_config.yaml** for more detials.
+See the configurations in **2Dpm/resources/default_config.yaml** for more details.
 
 ## Test
 
@@ -75,7 +85,7 @@ If you find this project useful in your research, please consider citing:
 ```
 @inproceedings{2DProjectionMatching,
   title={Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching},
-  author={Chao Chen and Zhizhong, Han and Yu-shen, Liu and Matthias, Zwicker},
+  author={Chao Chen and Zhizhong Han and Yu-shen Liu and Matthias Zwicker},
   booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
   year={2021}
 }
