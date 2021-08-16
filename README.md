@@ -1,6 +1,6 @@
 # Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching
 
-Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching](https://arxiv.org/pdf/2108.03746.pdf), a paper on ICCV2021.
+Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching](https://arxiv.org/pdf/2108.03746.pdf), a paper at ICCV2021.
 
 ![overview](overview/overview.png)
 
@@ -91,5 +91,16 @@ If you find this project useful in your research, please consider citing:
 }
 ```
 
-Our previous work published at ICML 2020 resolves the problem from another perspective, please see [here](https://github.com/chenchao15/drwr).
+Our previous work published at ICML 2020 resolves the same problem from another perspective, please see [here](https://github.com/chenchao15/drwr) :
+
+```
+@inproceedings{handrwr2020,
+  author = {Zhizhong Han and Chao Chen and Yu-Shen Liu and Matthias Zwicker},
+  title = {{DRWR}: A Differentiable Renderer without Rendering for Unsupervised 3{D} Structure Learning from Silhouette Images},
+  booktitle = {International Conference on Machine Learning},
+  year = {2020},
+}
+```
+
+
 
