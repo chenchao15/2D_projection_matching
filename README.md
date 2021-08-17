@@ -2,6 +2,30 @@
 
 Tensorflow implementation of [Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching](https://arxiv.org/pdf/2108.03746.pdf), a paper at ICCV2021.
 
+## Citation
+
+If you find this project useful in your research, please consider citing:
+
+```
+@inproceedings{2DProjectionMatching,
+  title={Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching},
+  author={Chao Chen and Zhizhong Han and Yu-shen Liu and Matthias Zwicker},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  year={2021}
+}
+```
+
+Our previous work published at ICML 2020 resolves the same problem from another perspective, please see [here](https://github.com/chenchao15/drwr) :
+
+```
+@inproceedings{handrwr2020,
+  author = {Zhizhong Han and Chao Chen and Yu-Shen Liu and Matthias Zwicker},
+  title = {{DRWR}: A Differentiable Renderer without Rendering for Unsupervised 3{D} Structure Learning from Silhouette Images},
+  booktitle = {International Conference on Machine Learning},
+  year = {2020},
+}
+```
+
 ![overview](overview/overview.png)
 
 ## Single Image Reconstruction Results
@@ -77,30 +101,4 @@ After the test, we save the quantification results in **checkpoint_dir/chamfer_d
 ## Acknowledgements
 
 We thank [DPC](https://arxiv.org/abs/1810.09381) for their great works and repos.
-
-## Citation
-
-If you find this project useful in your research, please consider citing:
-
-```
-@inproceedings{2DProjectionMatching,
-  title={Unsupervised Learning of Fine Structure Generation for 3D Point Clouds by 2D Projection Matching},
-  author={Chao Chen and Zhizhong Han and Yu-shen Liu and Matthias Zwicker},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
-  year={2021}
-}
-```
-
-Our previous work published at ICML 2020 resolves the same problem from another perspective, please see [here](https://github.com/chenchao15/drwr) :
-
-```
-@inproceedings{handrwr2020,
-  author = {Zhizhong Han and Chao Chen and Yu-Shen Liu and Matthias Zwicker},
-  title = {{DRWR}: A Differentiable Renderer without Rendering for Unsupervised 3{D} Structure Learning from Silhouette Images},
-  booktitle = {International Conference on Machine Learning},
-  year = {2020},
-}
-```
-
-
 
