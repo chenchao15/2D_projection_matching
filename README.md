@@ -35,9 +35,9 @@ Our previous work published at ICML 2020 resolves the same problem from another 
 ![result_2](overview/result_2.png)
 
 ## Optimization process visualization
-
+<div align=center>
 <img src="overview/a.gif" alt="Webp.net-gifmaker" style="zoom:50%;" /><img src="overview/b.gif" alt="Webp.net-gifmaker (2)" style="zoom:50%;" />
-
+</div>
 ## Requirements
 
 ### installation
